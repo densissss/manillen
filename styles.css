@@ -102,8 +102,9 @@ p {
 .misrechts {
     grid-area: misr;
     width: 115px;
-    justify-self: center;
-    
-    
-    
+    justify-self: center; 
+}
+
+.strike {
+    text-decoration: line-through;
 }
