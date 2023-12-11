@@ -3,9 +3,16 @@
     border-radius: 40px;
     width: 300px;
     height: 600px;
-    display: flex;
+    display: grid;
+    grid-template: 50px 50px 1fr / 1fr 2px 1fr;
     margin: auto;
-    flex-direction: column;
+    grid-template-areas: 
+        "titel titel titel"
+        "subtitel subtitel subtitel";
+    grid-gap: 10px;
+    padding-bottom: 10px;
+        
+
 }
 
 .titel {
@@ -17,6 +24,7 @@
     background-color: blanchedalmond;
     border-radius: 20px;
     font-size: large;
+    grid-area: titel;
 }
 
 .subtitel {
@@ -26,4 +34,12 @@
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 20px;
+    grid-area: subtitel;
+}
+
+.lijn {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    width: 2px
+    
 }
