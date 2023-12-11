@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="NL">
-    <head><link rel="stylesheet" href="styles.css"></head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"></head>
     <body>
         <div class="container">
             <div class="titel">Manillen</div>
-            <button class="subtitel">Hou je scores bij</button>
-            <div class="links"><h2>Wieder</h2><p class="scores">0</p></div>
+            <button class="subtitel">Reset scores</button>
+            <input type="numeric" placeholder="puntn vo wieder?" class="puntenlinks"><button class="oklinks" onclick="opschrijvenLinks()">Schrief mor up</button><button class="mislinks">'k zien gemist</button>
+            <input type="numeric" placeholder="puntn vo zieder?" class="puntenrechts"><button class="okrechts">schrief mor up</button><button class="misrechts">'k zien gemist</button>
+            <div class="links"><h2>Wieder</h2><p class="scoreslinks">0</p></div>
             <div class="lijn"></div>
-            <div class="rechts"><h2>Zieder</h2><p class="scores">0</p></div>
+            <div class="rechts"><h2>Zieder</h2><p class="scoresrechts">0</p></div>
         </div>
-        <script href="script.js"></script>
+        <script src="/script.js"></script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
     </body>
-
 </html>
