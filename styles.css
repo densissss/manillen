@@ -4,19 +4,19 @@
     width: 300px;
     height: 600px;
     display: grid;
-    grid-template: 50px 50px 1fr / 1fr 2px 1fr;
+    grid-template: auto auto 1fr / 1fr 1px 1fr;
     margin: auto;
     grid-template-areas: 
         "titel titel titel"
         "subtitel subtitel subtitel"
-        "scoreZieder lijn scoreWieder";
+        "links lijn rechts";
     grid-gap: 10px;
     padding-bottom: 10px;
 
 }
 
 .titel {
-    margin-top: auto;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .subtitel {
-    margin-top: 20px;
+    margin: 10px;
     text-align: center;
     background-color: blanchedalmond;
     margin-left: 20%;
@@ -40,9 +40,21 @@
 .lijn {
     border-left: 1px solid;
     border-right: 1px solid;
-    width: 2px;
+    width: 1px;
+    height: 100%;
     grid-area: lijn;
 
+}
+.links {
+    grid-area: links; 
+    margin-left: 10%;
+    margin-top: 
+}
+
+.rechts {
+    grid-area: rechts;
+    margin-right: 10%
+    display: flex;
 }
 
 h2 {
@@ -50,13 +62,7 @@ h2 {
     text-decoration: wavy underline;
 }
 
-.scoreveld-links {
-    background-color: aqua;
-    grid-area: scoreWwieder; 
+p {
+    text-align: center;
 }
 
-.scoreveld-rechts {
-    background-color: aqua;
-    grid-area: scoreZieder;
-    
-}
