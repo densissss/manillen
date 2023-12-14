@@ -4,14 +4,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"></head>
     <body>
-        <div class="container">
-            <div class="titel">Manillen</div>
+        <div class="container">            
+            <div class="titel">Maniln: <br>Puntnboek</div>             
             <button class="subtitel" onclick="reset()">Reset scores</button>
-            <input id="puntenl" type="numeric" placeholder="puntn vo wieder?" class="puntenlinks"><button class="oklinks" onclick="opschrijvenLinks()">Schrief mor up</button><button class="mislinks" onclick="undoLinks()">'k zien gemist</button>
-            <input id="puntenr" type="numeric" placeholder="puntn vo zieder?" class="puntenrechts"><button class="okrechts" onclick="opschrijvenRechts()">schrief mor up</button><button class="misrechts">'k zien gemist</button>
+            <input required id="puntenl" type="tel" placeholder="puntn vo wieder" class="puntenlinks"><button class="oklinks knoppen" onclick="opschrijvenLinks()">Schrief mor up</button><button class="mislinks knoppen" onclick="undoLinks()">'k zien gemist</button>
+            <input required id="puntenr" type="tel" placeholder="puntn vo zieder" class="puntenrechts"><button class="okrechts knoppen" onclick="opschrijvenRechts()">Schrief mor up</button><button class="misrechts knoppen" onclick="undoRechts()">'k zien gemist</button>
             <div class="links"><h2>Wieder</h2><p id="scoresOudLinks"></p><p id="totaalLinks">0</p></div>
-            <div class="lijn"></div>
+            <div class="lijn"></div> 
             <div class="rechts"><h2>Zieder</h2><p id="scoresOudRechts"></p><p id="totaalRechts">0</p></div>
+            <img id="kaartenl" src="kaarten.png"> 
+            <img id="kaartenr" src="kaarten.png">
         </div>
         <script src="script.js"></script>
         <noscript>Sorry, your browser does not support JavaScript!</noscript>
